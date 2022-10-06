@@ -4,31 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="icon-font.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight&family=Noto+Sans+Mono&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/25bc09f321.js" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
     <title>dev collective</title>
 </head>
 <body>
-    
-    <header class="header">
-        <h4 class="headerlogo"> <a href="#">d|c</a></h4>
-        <ul class="navmenu">
-            <li class="menuitem"><a href="#">about</a></li>
-            <li class="menuitem"><a href="#">our work</a></li>
-            <li class="menuitem"><a href="#">join the collective</a></li>
-            <li class="menuitem"><a href="#">contact</a></li>
-        </ul>
-    </header>
 
-    <main class="main">
-        <div class="main_titles">
-            <h1 class="main_title">who we are</h1>
-            <h3 class="main_subtitle">assist, educate, inspire - <a href="#">find out how</a></h3>
+    <header class="header" id="header">
+        <nav class="navbar container">
+           <a href="./index.html" class="brand">d|c</a>
+           <div class="burger" id="burger">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+           </div>
+           <div class="menu" id="menu">
+              <ul class="menu__inner">
+                 <li class="menu__item"><a href="index.html" class="menu__link">home</a></li>
+                 <li class="menu__item"><a href="about.html" class="menu__link">about</a></li>
+                 <li class="menu__item"><a href="portfolio.html" class="menu__link">join the collective</a></li>
+                 <li class="menu__item"><a href="https://twitter.com/rennerdigital" target="_blank" class="menu__link"><i class="fa-brands fa-twitter"></i></a></li>
+                 <li class="menu__item"><a href="https://www.linkedin.com/in/rennermccreath/" target="_blank" class="menu__link"><i class="fa-brands fa-linkedin"></i></a></li>
+                 <li class="menu__item"><a href="https://github.com/rennerdigital" target="_blank" class="menu__link"><i class="fa-brands fa-github"></i></a></li>
+              </ul>
+           </div>
+        </nav>
+    </header> 
+
+    <section class="about__container" id="about__one">
+        <div class="about_titles">
+            <h1 class="about_title">who we are</h1>
+            <h3 class="about_subtitle">The Developer Collective aims to collaborate, educate, and inspire.</h3>
+            <h3 class="about_subtitle"><a href="#marker__one">find out how</a> | <a href="#">meet our volunteers</a></h3>
         </div>
-        <h6 class="main_text">The Developer Collective was founded in September 2022 by Renner McCreath with one goal in mind - to help those in need.</h6>
-        <h6 class="main_text">Based in Toronto, The Developer Collective is committed to offering volunteer web development services to charities, non-profits, and organizations in need.</h6>
-        <h6 class="main_text">Based in Toronto, The Developer Collective is committed to offering volunteer web development services to charities, non-profits, and organizations in need.</h6>
-    </main>
-
+    </section>
+    <p id="marker__one"></p>
+    <section class="about__container" id="about__two">
+        <div class="about_titles">
+            <h1 class="about_title">collaborate</h1>
+        </div>
+        <div class="aboutbio">
+            <h6 class="about_text">The Developer Collective was founded in September 2022 by developer Renner McCreath with one goal in mind - to help those in need.</h6>
+            <h6 class="about_text">Based in Toronto, Canada, The Developer Collective is committed to offering volunteer web development services to charities, non-profits, and organizations in need.</h6>
+            <h6 class="about_text">We believe that charities, not-for-profits, and organizations enacting fundamental change deserve just as strong a digital presence as any other corporation.</h6>
+        </div>
+        <div class="more"><a href="#marker__two">&#8595</a></div>
+    </section>
+    <p id="marker__two"></p>
+    <section class="about__container" id="about__three">
+        <div class="about_titles">
+            <h1 class="about_title">educate</h1>
+        </div>
+        <div class="aboutbio">
+            <h6 class="about_text">We aim to spread information. That's our ultimate goal.</h6>
+            <h6 class="about_text">Whether it's our developers working together in a team environment, our partners gaining a deeper understanding of how to leverage the power of the internet, or ultimately getting eyes on organizations spreading good around the world, The Developer Collective was created to inform.</h6>
+            <h6 class="about_text">We believe that charities, not-for-profits, and organizations enacting fundamental change deserve just as strong a digital presence as any other corporation.</h6>
+        </div>
+        <div class="more"><a href="#marker__three">&#8595</a></div>
+    </section>
+    <p id="marker__three"></p>
+    <section class="about__container" id="about__four">
+        <div class="about_titles">
+            <h1 class="about_title">inspire</h1>
+        </div>
+        <div class="aboutbio">
+            <h6 class="about_text">We are here to give a digital voice to those in need.</h6>
+            <h6 class="about_text">If you're a charity, not-for-profit, or related organization looking for help - we invite you to join the Digital Collective by filling out our form <a href="">here</a>.</h6>
+            <h6 class="about_text">We are always looking for junior developers looking for volunteer projects. You may fill out an application <a href="">here</a>, and a representative from The Digital Collective will be in touch.</h6>
+        </div>
+        <div class="more"><a href="#">back to top &#8593</a></div>
+    </section>
+    <footer>copyright &#169 2022 The Developer Collective</footer>
 </body>
 </html>

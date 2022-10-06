@@ -4,13 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="icon-font.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight&family=Noto+Sans+Mono&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/25bc09f321.js" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
     <title>dev collective</title>
 </head>
-<body>
+<body class="indexbody">
+
+    <header class="header" id="header">
+        <nav class="navbar container">
+           <a href="./index.html" class="brand">d|c</a>
+           <div class="burger" id="burger">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+           </div>
+           <div class="menu" id="menu">
+              <ul class="menu__inner">
+                 <li class="menu__item"><a href="index.html" class="menu__link">home</a></li>
+                 <li class="menu__item"><a href="about.html" class="menu__link">about</a></li>
+                 <li class="menu__item"><a href="portfolio.html" class="menu__link">join the collective</a></li>
+                 <li class="menu__item"><a href="https://twitter.com/rennerdigital" target="_blank" class="menu__link"><i class="fa-brands fa-twitter"></i></a></li>
+                 <li class="menu__item"><a href="https://www.linkedin.com/in/rennermccreath/" target="_blank" class="menu__link"><i class="fa-brands fa-linkedin"></i></a></li>
+                 <li class="menu__item"><a href="https://github.com/rennerdigital" target="_blank" class="menu__link"><i class="fa-brands fa-github"></i></a></li>
+              </ul>
+           </div>
+        </nav>
+    </header> 
     
-    <header class="header">
+    <!-- <header class="header">
         <h4 class="headerlogo"> <a href="#">d|c</a></h4>
         <ul class="navmenu">
             <li class="menuitem"><a href="#">about</a></li>
@@ -18,15 +44,15 @@
             <li class="menuitem"><a href="#">join the collective</a></li>
             <li class="menuitem"><a href="#">contact</a></li>
         </ul>
-    </header>
+    </header> -->
 
     <main class="main">
         <div class="main_titles">
             <h1 class="main_title">the developer collective</h1>
-            <h3 class="main_subtitle">lifting up the digital community.</h3>
+            <h3 class="main_subtitle">| lifting up the digital community |</h3>
         </div>
         <h6 class="main_text">Welcome to The Developer Collective! We're a group of software engineers looking to lend our skills and compassion to those in need. Feel free to have a look around - we're here to help.</h6>
     </main>
-
+    <footer>copyright &#169 2022 The Developer Collective</footer>
 </body>
 </html>

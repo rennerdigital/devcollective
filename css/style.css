@@ -1,12 +1,20 @@
 * {
     box-sizing: border-box;
+    margin: 0 auto;
+    font-family: 'Inter Tight', 'VT323', 'Press Start 2P';
+    scroll-behavior: smooth;
 }
 
-body {
+.indexbody {
     width: 100%;
     height: 100%;
-    /* background-image: url("https://frontsigns.com/wp-content/uploads/2022/01/conference-room-wall-graphics-.jpg"); */
-    background-color: beige;
+    background-color: ivory;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(113, 169, 214, 0.95), 
+        rgba(113, 169, 214, 0.95)), 
+        url("https://frontsigns.com/wp-content/uploads/2022/01/conference-room-wall-graphics-.jpg");
+    background-size: cover;
     color: black;
 }
 
@@ -30,38 +38,287 @@ body {
     margin: 30px;
 }
 
-.menuitem {
+.menu__item {
     padding: 0 20px;
     list-style: none;
 }
 
-a {
+a, li {
     text-decoration: none;
 }
 
 .main {
+    /* background-image: url("https://frontsigns.com/wp-content/uploads/2022/01/conference-room-wall-graphics-.jpg"); */
+    /* background-image: linear-gradient(
+         to right bottom,
+         rgba(113, 169, 214, 0.95), 
+         rgba(36, 109, 114, 0.95)), 
+         url("https://frontsigns.com/wp-content/uploads/2022/01/conference-room-wall-graphics-.jpg");
+    background-size: cover; */
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 100px;
 }
 
 .main_titles {
     display: flex;
     flex-direction: column;
-    padding-left: 60px;
+    padding-top: 100px;
 }
 
-.main_title {
-    font-size: 80px
+.main_title, .about_title {
+    font-family: 'Inter Tight';
+    font-size: 180px;
 }
 
 .main_subtitle {
     font-size: 60px;
+    padding-top: 60px;
+}
+
+.maintexts {
+    display: flex;
+    flex-direction: column;
 }
 
 .main_text {
-    width: 40%;
-    padding: 80px 60px;
-    font-size: 40px;
+    width: 60%;
+    padding: 220px 60px 0 60px;
+    font-size: 30px;
 }
 
+.brand {
+    font-size: 40px;
+    color: white;
+}
+
+/* #marker__one {
+    position: fixed;
+    bottom: 0;
+} */
+
+.about__container {
+    height: 100vh;
+    width: 100vw;
+    border-bottom: 10px solid black;
+    padding-top: 20vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#about__one {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(113, 169, 214, 0.8), 
+        rgba(113, 169, 214, 0.8)), 
+        url("https://i.redd.it/wmf4pf98d4l61.png");
+}
+
+#about__two {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(113, 169, 214, 0.9), 
+        rgba(113, 169, 214, 0.9)), 
+        url("https://wallpapercave.com/wp/wp8778435.jpg")
+}
+
+#about__three {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(113, 169, 214, 0.8), 
+        rgba(113, 169, 214, 0.8)), 
+        url("https://i.redd.it/wmf4pf98d4l61.png")
+}
+
+#about__four {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(113, 169, 214, 0.9), 
+        rgba(113, 169, 214, 0.9)), 
+        url("https://wallpapercave.com/wp/wp8778435.jpg")
+}
+
+.about {
+    padding: 100px;
+}
+
+.about_titles {
+    
+    text-align: center;
+}
+
+.about_title {
+    color: rgb(11, 39, 61, 0.95);
+}
+
+.about_subtitle {
+    font-family: 'Inter Tight';
+    font-size: 90px;
+    padding: 20px;
+}
+
+.about_text {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.more {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: white;
+}
+
+/* .aboutbio {
+    display: flex;
+    flex-direction: column;
+} */
+
+.container {
+    max-width: vw;
+    height: auto;
+    margin: auto;
+    padding: 0 12.5px; 
+}
+  
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    transition: all 0.35s ease; 
+}
+    
+.header.on-scroll {
+      background: rgba(113, 169, 214, 0.6);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+  
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 10px;
+    width: 100%;
+    height: 40.25px;
+    margin: 0 auto; }
+    .navbar.container {
+      margin-top: 20px; }
+  
+  .menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 40px 0 3px;
+    overflow: hidden;
+    background-color: black;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: all 0.4s ease-in-out; }
+    .menu.is-active {
+      top: 0;
+      width: 100%;
+      height: auto; }
+    .menu__inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 12.5px; }
+    .menu__link {
+      font-family: inherit;
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 1.5;
+      color: white;
+      text-transform: uppercase;
+      transition: all 0.3s ease; }
+    .menu__link:hover, .brand:hover {
+        color: rgba(11, 39, 61, 0.95);
+        transition: all 0.6s ease-in-out; 
+    }
+    @media only screen and (min-width: 650px) {
+      .menu {
+        position: relative;
+        top: 0;
+        width: auto;
+        height: auto;
+        padding: 0px;
+        margin-left: auto;
+        background: none;
+        box-shadow: none; }
+        .menu__inner {
+          display: flex;
+          flex-direction: row;
+          column-gap: 20px;
+          margin: 0 auto; }
+        .menu__link {
+          text-transform: lowercase; } }
+  
+  .burger {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    order: -1;
+    z-index: 10;
+    margin-top: 10px;
+    width: 30.5px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background: none;
+    visibility: visible;
+    transform: rotate(0deg);
+    transition: 0.35s ease; }
+    @media only screen and (min-width: 650px) {
+      .burger {
+        display: none;
+        visibility: hidden; } }
+    .burger__line {
+      position: absolute;
+      display: block;
+      right: 0;
+      width: 100%;
+      height: 2px;
+      border: none;
+      outline: none;
+      opacity: 1;
+      transform: rotate(0deg);
+      background-color: white;
+      transition: 0.25s ease-in-out; }
+      .burger__line:nth-child(1) {
+        top: 0px; }
+      .burger__line:nth-child(2) {
+        top: 5px; }
+      .burger__line:nth-child(3) {
+        top: 10px; }
+    .burger.is-active .burger__line:nth-child(1) {
+      top: 5px;
+      transform: rotate(135deg); }
+    .burger.is-active .burger__line:nth-child(2) {
+      right: -15px;
+      opacity: 0;
+      visibility: hidden; }
+    .burger.is-active .burger__line:nth-child(3) {
+      top: 5px;
+      transform: rotate(-135deg); }
+
+footer {
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    bottom: 0;
+    text-align: right;
+    font-size: 10px;
+}
