@@ -66,7 +66,7 @@ a, li {
     padding-top: 100px;
 }
 
-.main_title, .about_title {
+.main_title, .about_title, .join_title {
     font-family: 'Inter Tight';
     font-size: 180px;
 }
@@ -97,7 +97,7 @@ a, li {
     bottom: 0;
 } */
 
-.about__container {
+.about__container, .join__container {
     height: 100vh;
     width: 100vw;
     border-bottom: 10px solid black;
@@ -107,7 +107,7 @@ a, li {
     background-repeat: no-repeat;
 }
 
-#about__one {
+#about__one, #join__one {
     background-image: linear-gradient(
         to right bottom,
         rgba(113, 169, 214, 0.8), 
@@ -115,7 +115,7 @@ a, li {
         url("https://i.redd.it/wmf4pf98d4l61.png");
 }
 
-#about__two {
+#about__two, #join__two {
     background-image: linear-gradient(
         to right bottom,
         rgba(113, 169, 214, 0.9), 
@@ -123,7 +123,7 @@ a, li {
         url("https://wallpapercave.com/wp/wp8778435.jpg")
 }
 
-#about__three {
+#about__three, #join__three {
     background-image: linear-gradient(
         to right bottom,
         rgba(113, 169, 214, 0.8), 
@@ -143,22 +143,86 @@ a, li {
     padding: 100px;
 }
 
-.about_titles {
-    
+.about_titles, .join_titles {
     text-align: center;
 }
 
-.about_title {
-    color: rgb(11, 39, 61, 0.95);
+.about_subtitle, .join_subtitle {
+    padding: 20px;
+    width: 60%;
 }
 
 .about_subtitle {
-    font-family: 'Inter Tight';
-    font-size: 90px;
+    font-size: 70px;
+}
+
+.join_subtitle {
+    font-size: 40px;
+}
+
+.join_form {
+    font-size: 40px;
+    width: 75%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
     padding: 20px;
 }
 
-.about_text {
+input, button {
+    padding: 20px;
+    width: 300px;
+    margin: 20px;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(113, 169, 214, 0.9), 
+        rgba(113, 169, 214, 0.9));
+    border: none;
+    box-shadow: 5px 10px #888888;
+}
+
+input:focus, button:hover {
+    outline: none;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(4, 68, 121, 0.9), 
+        rgba(16, 136, 74, 0.9));
+    color: whitesmoke;
+}
+
+input:focus::placeholder {
+    color: whitesmoke;
+}
+
+.inputshort {
+    display: flex;
+}
+
+.messagebox {
+    display: flex;
+    width: 75%;
+    height: 300px;
+}
+
+button {
+    width: 40%;
+}
+
+.messagebox__container {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+}
+
+.button__container {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.about_text, .join_text {
     font-family: Arial, Helvetica, sans-serif;
     width: 60%;
     font-size: 30px;
@@ -172,7 +236,7 @@ a, li {
     color: white;
 }
 
-/* .aboutbio {
+/* .aboutbio, .joinbio {
     display: flex;
     flex-direction: column;
 } */

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="icon-font.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight&family=Noto+Sans+Mono&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/25bc09f321.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <title>dev collective</title>
+</head>
+<body>
+
+    <header class="header" id="header">
+        <nav class="navbar container">
+           <a href="./index.html" class="brand">d|c</a>
+           <div class="burger" id="burger">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+           </div>
+           <div class="menu" id="menu">
+              <ul class="menu__inner">
+                 <li class="menu__item"><a href="index.html" class="menu__link">home</a></li>
+                 <li class="menu__item"><a href="about.html" class="menu__link">about</a></li>
+                 <li class="menu__item"><a href="join.html" class="menu__link">join the collective</a></li>
+                 <li class="menu__item"><a href="https://twitter.com/rennerdigital" target="_blank" class="menu__link"><i class="fa-brands fa-twitter"></i></a></li>
+                 <li class="menu__item"><a href="https://www.linkedin.com/in/rennermccreath/" target="_blank" class="menu__link"><i class="fa-brands fa-linkedin"></i></a></li>
+                 <li class="menu__item"><a href="https://github.com/rennerdigital" target="_blank" class="menu__link"><i class="fa-brands fa-github"></i></a></li>
+              </ul>
+           </div>
+        </nav>
+    </header> 
+
+    <section class="join__container" id="join__one">
+        <div class="join_titles">
+            <h1 class="join_title">join the collective</h1>
+            <h3 class="join_subtitle">Whether you represent an organization or are a developer of any skill level looking to do some good, we would love to hear from you. Click on the below links to get in touch.</h3>
+            <h3 class="join_subtitle"><a href="#marker__one">I represent an organization</a> | <a href="#marker__two">I am a developer</a></h3>
+        </div>
+    </section>
+    <p id="marker__one"></p>
+    <section class="join__container" id="join__two">
+        <div class="join_titles">
+            <h1 class="join_form">Let's Connect! Please fill out the out form below to get started.</h1>
+        </div>
+        <form class="form" action="https://formsubmit.co/thedevelopercollective@gmail.com" method="POST" autocomplete="off">
+            <div class="inputshort">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="text" name="name" placeholder="Name of Organization" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="text" name="name" placeholder="Existing Website (leave blank if no website)">
+            </div>
+            <div class="messagebox__container">
+            <input class="messagebox" type="text" name="name" placeholder="How can we help?" required>
+            </div>
+            <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+            <input type="hidden" name="_subject" value="New Partnership - Let's Connect!">
+            <div class="button__container">
+            <button type="submit">Send</button>
+            </div>
+       </form>
+    </section>
+    <p id="marker__two"></p>
+    <section class="join__container" id="join__three">
+        <div class="join_titles">
+            <h1 class="join_form">The Developer Collective welcomes developers of all skill levels to submit an application by filling out the form below. Please attach your resume (pdf/word) using the 'choose file' button.</h1>
+        </div>
+        <form class="form" action="https://formsubmit.co/thedevelopercollective@gmail.com" method="POST" autocomplete="off">
+            <div class="inputshort">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="text" name="name" placeholder="GitHub URL" required>
+            <input type="text" name="name" placeholder="LinkedIn URL">
+            <input type="file" name="attachment" accept="image/png, image/jpeg, application/pdf, application/msword">
+            </div>
+            <div class="messagebox__container">
+            <input class="messagebox" type="text" name="name" placeholder="In a few lines, tell us why you'd be a great fit for The Developer Collective!" required>
+            </div>
+            <input type="hidden" name="_next" value="thanks.html">
+            <input type="hidden" name="_subject" value="Developer Application">
+            <div class="button__container">
+            <button type="submit">Send</button>
+            </div>
+       </form>
+    </section>
+    <footer>copyright &#169 2022 The Developer Collective</footer>
+</body>
+</html>
