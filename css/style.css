@@ -441,6 +441,7 @@ footer {
 
     .main_title, .about_title, .join_title {
         font-size: 70px;
+        width: 90%;
         text-align: center;
     }
 
@@ -453,10 +454,10 @@ footer {
     }
 
     .join_subtitle {
-        font-size: 30px;
+        font-size: 25px;
         padding-top: 10px;
         text-align: center;
-        width: 100%;
+        width: 90%;
     }
 
     .main_text, .about_text {
