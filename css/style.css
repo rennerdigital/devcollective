@@ -99,7 +99,7 @@ a, li {
 
 .about__container, .join__container {
     height: 100vh;
-    width: 100vw;
+    
     border-bottom: 10px solid black;
     padding-top: 20vh;
     background-attachment: fixed;
@@ -216,6 +216,10 @@ button {
     width: 75%;
 }
 
+.messagebox__short {
+    display: none;
+}
+
 .button__container {
     display: flex;
     justify-content: center;
@@ -285,7 +289,10 @@ button {
     height: auto;
     padding: 40px 0 3px;
     overflow: hidden;
-    background-color: black;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(4, 68, 121, 0.9), 
+        rgba(16, 136, 74, 0.9));
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
     transition: all 0.4s ease-in-out; }
@@ -305,13 +312,12 @@ button {
       font-weight: 500;
       line-height: 1.5;
       color: white;
-      text-transform: uppercase;
       transition: all 0.3s ease; }
     .menu__link:hover, .brand:hover {
         color: rgba(11, 39, 61, 0.95);
         transition: all 0.6s ease-in-out; 
     }
-    @media only screen and (min-width: 650px) {
+    @media only screen and (min-width: 1000px) {
       .menu {
         position: relative;
         top: 0;
@@ -345,7 +351,7 @@ button {
     visibility: visible;
     transform: rotate(0deg);
     transition: 0.35s ease; }
-    @media only screen and (min-width: 650px) {
+    @media only screen and (min-width: 1000px) {
       .burger {
         display: none;
         visibility: hidden; } }
@@ -385,4 +391,130 @@ footer {
     bottom: 0;
     text-align: right;
     font-size: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .header {
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+        height: 60px;
+    }
+
+    .burger {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .brand {
+        display: none;
+    }
+
+    .menu__inner {
+        display: block;
+        padding-top: 40px;
+    }
+
+    
+
+    .main_titles {
+        padding-top: 0;
+    }
+
+    .join__container {
+        padding-top: 20vh;
+    }
+
+    #join__two, #join__three {
+        padding-top: 70px;
+    }
+
+    .join_form {
+        font-size: 30px;
+    }
+
+    .join_devform {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .main_title, .about_title, .join_title {
+        font-size: 70px;
+        text-align: center;
+    }
+
+    .main_subtitle, .about_subtitle {
+        font-size: 30px;
+        padding-top: 60px;
+        padding-bottom: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .join_subtitle {
+        font-size: 30px;
+        padding-top: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .main_text, .about_text {
+        width: 100%;
+        padding: 10px 5px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .about_text:first-child {
+        padding: 40px 5px 0 5px;
+    }
+
+    .more {
+        font-size: 30px;
+    }
+
+    #about__one, #join__one, #about__two, #join__two, #about__three, #join__three, #about__four {
+        background-size: 100% 100%;
+    }
+
+    
+
+    .form {
+        padding: 0;
+    }
+
+    .messagebox {
+        display: none;
+    }
+    .messagebox__short {
+        display: block;
+    }
+
+    footer {
+        font-size: 5px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .main {
+        flex-direction: column;
+        padding: 100px 10px 10px 10px;
+    }
+}
+
+@media only screen and (max-width: 1750px) {
+    .inputshort {
+        flex-direction: column;
+    }
+
+    .messagebox {
+        height: 150px;
+    }
+}
+
+@media only screen and (max-height: 800px) {
+    input {
+        margin: 10px;
+    }
 }
