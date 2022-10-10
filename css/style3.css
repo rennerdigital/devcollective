@@ -107,6 +107,10 @@ a, li {
     background-repeat: no-repeat;
 }
 
+.join__container {
+    overflow: hidden;
+}
+
 #about__one, #join__one {
     background-image: linear-gradient(
         to right bottom,
