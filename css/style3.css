@@ -108,7 +108,7 @@ a, li {
 }
 
 .join__container {
-    overflow: hidden;
+    overflow: scroll;
 }
 
 #about__one, #join__one {
